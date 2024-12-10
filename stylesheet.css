@@ -398,18 +398,21 @@ body{
         padding: 10px;
     }
     .Naslov img{
-        width: 100px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
     .limfo{
-        font-size: 40px;
+        font-size: 2.5em; /* Adjust font size relative to screen size */
     }
     .jezik{
-        font-size: 18px;
+        font-size: 1.2em;
         text-align: left;
     }
     .Nav-meni{
         width: 100%;
-        font-size: 16px;
+        font-size: 1.1em;
+        text-align: center;
     }
     .Nav-meni li{
         display: block;
@@ -429,7 +432,7 @@ body{
         padding: 20px;
     }
     .kontakt input,.kontakt textarea{
-        font-size: 14px;
+        font-size: 1em;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px){
@@ -437,14 +440,14 @@ body{
         height: 160px;
     }
     .limfo{
-        font-size: 45px;
+        font-size: 2.8em;
     }
     .jezik{
-        font-size: 22px;
+        font-size: 1.4em;
     }
     .Nav-meni{
         width: 60%;
-        font-size: 18px;
+        font-size: 1.2em;
     }
     .Nav-meni li{
         display: inline-block;
@@ -462,10 +465,10 @@ body{
         height: 180px;
     }
     .limfo{
-        font-size: 50px;
+        font-size: 3em;
     }
     .jezik{
-        font-size: 30px;
+        font-size: 1.8em;
     }
     .Nav-meni{
         width: 40%;
