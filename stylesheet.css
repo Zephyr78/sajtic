@@ -1,0 +1,483 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+.Naslov{
+    width: 100%;
+    background: linear-gradient(to right,gray, #e3e4ac);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+.Naslov img{
+    height: auto;
+    object-fit: contain;
+    width: 180px;
+}
+.limfo{
+    color: white;
+    font-size: 50px;
+    font-family: 'Lucida Handwriting', cursive;
+}
+.jezik{
+    color: rgb(192, 147, 49);
+    font-size: 30px;
+    text-align: right;
+    width: 100%;
+    padding: 20px;
+}
+.jezik a{
+    text-decoration: none;
+    color: rgb(192, 147, 49);
+    display: inline-block;
+    font-size: 30px;
+}
+.jezik a:hover{
+    transform: scale(1.15);
+    transition-duration: 0.2s;
+}
+.jezik a:not(hover){
+    transition-duration: 0.2s;
+}
+.Nav-meni{
+    border-radius: 50px;
+    width: 40%;
+    text-align: center;
+    background-color: beige;
+    list-style-type: none;    
+    height: auto;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.Nav-meni li{
+    display: inline-block;
+    margin: 0px;
+    padding: 20px;
+    font-size: 20px;
+}
+.Nav-meni a{
+    text-decoration: none;
+    color: black;
+}
+.Nav-meni a:hover{
+    background-color: white;
+    color: gold;
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 0.2s;
+}
+.Nav-meni a:not(:hover){
+    transition-duration: 0.2s;
+}
+.Nav-meni a.aktivan{
+    background-color: white;
+    color: gold;
+    border-radius: 10px;
+    padding: 10px;
+}
+.naslovna{
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+.naslovna .glavno{
+    background: linear-gradient(to right, #e3e4ac, gray);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    background-size: 200% 200%;
+    animation: animacija 10s infinite linear;
+}
+@keyframes animacija {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%; 
+    }
+    50% {
+        background-position: 100% 100%; 
+    }
+    75% {
+        background-position: 0% 100%; 
+    }
+    100% {
+        background-position: 0% 0%; 
+    }
+}
+.naslovna .glavno h1{
+    font-size: 50px;
+}
+.naslovna .glavno p{
+    font-size: 20px;
+}
+.naslovna .o-nama, .zasto, .nusluge{
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.naslovna .o-nama h2, .zasto h2, .nusluge h2{
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+}
+.naslovna .o-nama p, .zasto ul{
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    line-height: 1.8;
+}
+.naslovna .zasto ul{
+    list-style: none;
+    padding: 0;
+}
+.naslovna .zasto ul li{
+    margin-bottom: 15px;
+}
+.naslovna .nusluge ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+.naslovna .nusluge ul li{
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.2s;
+    margin: 10px;
+}
+.naslovna .nusluge ul li:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.naslovna .zavrsno{
+    background-color: #f5a623;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.naslovna .zavrsno h2 {
+    font-size: 36px;
+}
+.naslovna .zdugme {
+    background-color: white;
+    color: #f5a623;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.naslovna .zdugme:hover {
+    background-color: #f5a623;
+    color: white;
+    transform: scale(1.05);
+}
+.mejn{
+    box-shadow: 0px 4px 10px gray;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 70%;
+}
+.omeni{
+    font-size: 50px;
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+}
+.info p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding: 200px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.poziv{
+    color: rgb(192, 147, 49);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.usluge{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    border-radius: 50px;
+}
+.usluge ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+.usluge ul li{
+    text-align: center;
+    border: 5px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    margin: 100px 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.usluge ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+.usluge ul li img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.usluge ul li h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.usluge ul li p{
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+}
+.usluge ul li .cena{
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.usluge ul li a:hover{
+    background-color: beige;
+    color: rgb(153, 139, 57);
+    transition-duration: 0.2s;
+    transform: scale(1.05);
+}
+.usluge ul li a:not(:hover){
+    background-color: #f8f8f8;
+    color: black;
+    box-shadow: 0 2px 5px gray;
+    transition-duration: 0.2s;
+}
+.edukacija {
+    max-width: 900px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px gray;
+    margin: 0 auto;
+}
+.edukacija h1{
+    font-size: 36px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.edukacija .rating{
+    font-size: 20px;
+    color: #f5a623;
+    margin-bottom: 30px;
+}
+.edukacija h2{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.edukacija p{
+    font-size: 20px;
+    color: gray;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.edukacija .bold{
+    font-weight: bold;
+}
+.edukacija .kraj{
+    font-size: 22px;
+    font-weight: bold;
+    color: #f5a623;
+}
+.edukacija a{
+    display: inline-block;
+    background-color: #f5a623;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+.edukacija a:hover{
+    background-color: #d68a1f;
+}
+.edukacija a:not(:hover){
+    transition-duration: 0.2s;
+}
+.kontakt{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+}
+.kontakt h2{
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.kontakt label{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+.kontakt input, .kontakt textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.kontakt textarea{
+    resize: vertical;
+}
+.kontakt button{
+    background-color: #f5a623;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.kontakt button:hover{
+    background-color: #d68a1f;
+}
+.footer{
+    background-color: #f5f5f5; 
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+}
+.footer p{
+    margin: 10px;
+    color: black;
+}
+@media (max-width: 768px){
+    .Naslov{
+        height: 120px;
+        padding: 10px;
+    }
+    .Naslov img{
+        width: 100px;
+    }
+    .limfo{
+        font-size: 40px;
+    }
+    .jezik{
+        font-size: 18px;
+        text-align: left;
+    }
+    .Nav-meni{
+        width: 100%;
+        font-size: 16px;
+    }
+    .Nav-meni li{
+        display: block;
+        padding: 10px;
+    }
+    .naslovna{
+        padding: 20px;
+    }
+    .naslovna .glavno{
+        padding: 20px;
+    }
+    .usluge ul li{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .kontakt{
+        padding: 20px;
+    }
+    .kontakt input,.kontakt textarea{
+        font-size: 14px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .Naslov{
+        height: 160px;
+    }
+    .limfo{
+        font-size: 45px;
+    }
+    .jezik{
+        font-size: 22px;
+    }
+    .Nav-meni{
+        width: 60%;
+        font-size: 18px;
+    }
+    .Nav-meni li{
+        display: inline-block;
+        padding: 15px;
+    }
+    .naslovna .glavno{
+        padding: 30px;
+    }
+    .usluge ul li{
+        width: 45%;
+    }
+}
+@media (min-width: 1025px){
+    .Naslov{
+        height: 180px;
+    }
+    .limfo{
+        font-size: 50px;
+    }
+    .jezik{
+        font-size: 30px;
+    }
+    .Nav-meni{
+        width: 40%;
+    }
+    .Nav-meni li{
+        display: inline-block;
+        padding: 20px;
+    }
+    .naslovna .glavno{
+        padding: 40px;
+    }
+    .usluge ul li{
+        width: 30%;
+    }
+}
