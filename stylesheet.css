@@ -9,16 +9,20 @@ body{
 }
 .Naslov{
     width: 100%;
-    background: linear-gradient(to right,gray, #e3e4ac);
-    height: 180px;
+    background: linear-gradient(to right, gray, #e3e4ac);
+    height: 120px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 .Naslov img{
+    width: 100%;
+    max-width: 180px;
     height: auto;
     object-fit: contain;
-    width: 180px;
 }
 .limfo{
     color: white;
@@ -29,7 +33,7 @@ body{
     color: rgb(192, 147, 49);
     font-size: 30px;
     text-align: right;
-    width: 100%;
+    width: auto;
     padding: 20px;
 }
 .jezik a{
@@ -201,6 +205,7 @@ body{
     color: gold;
     text-align: center;
     font-weight: bold;
+    word-wrap: break-word; 
 }
 .info p{
     text-align: center;
@@ -394,95 +399,114 @@ body{
     margin: 10px;
     color: black;
 }
-@media (max-width: 768px){
-    .Naslov{
+@media (max-width: 768px) {
+    .Naslov {
         height: 120px;
         padding: 10px;
     }
-    .Naslov img{
-        width: 100%;
+    .Naslov img {
+        width: 15%;
         max-width: 100%;
         height: auto;
     }
-    .limfo{
-        font-size: 2.5em;
+    .limfo {
+        font-size: 1.7em;
     }
-    .jezik{
+    .jezik {
         font-size: 1.2em;
         text-align: left;
+        margin-top: 10px;
     }
-    .Nav-meni{
+    .Nav-meni {
         width: 100%;
-        font-size: 1.1em;
+        font-size: 1em;
         text-align: center;
     }
-    .Nav-meni li{
+    .Nav-meni li {
         display: block;
         padding: 10px;
     }
-    .naslovna{
+    .naslovna {
         padding: 20px;
     }
-    .naslovna .glavno{
+    .naslovna .glavno {
         padding: 20px;
     }
-    .usluge ul li{
+    .naslovna .nusluge ul {
+        flex-direction: column;
+    }
+    .usluge ul li {
         width: 100%;
         margin: 10px 0;
     }
-    .kontakt{
+    .kontakt {
         padding: 20px;
     }
-    .kontakt input,.kontakt textarea{
+    .kontakt input,
+    .kontakt textarea {
         font-size: 1em;
     }
 }
-@media (min-width: 769px) and (max-width: 1024px){
-    .Naslov{
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Naslov {
         height: 160px;
     }
-    .limfo{
+    .limfo {
         font-size: 2.8em;
     }
-    .jezik{
+    .jezik {
         font-size: 1.4em;
     }
-    .Nav-meni{
+    .Nav-meni {
         width: 60%;
         font-size: 1.2em;
     }
-    .Nav-meni li{
+    .Nav-meni li {
         display: inline-block;
         padding: 15px;
     }
-    .naslovna .glavno{
+    .naslovna .glavno {
         padding: 30px;
     }
-    .usluge ul li{
+    .usluge ul li {
         width: 45%;
     }
+    .mejn {
+        width: 90%;
+        padding: 15px;
+    }
+    .omeni {
+        font-size: 30px;
+    }
+    .info p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .poziv {
+        font-size: 24px;
+    }
 }
-@media (min-width: 1025px){
-    .Naslov{
+@media (min-width: 1025px) {
+    .Naslov {
         height: 180px;
     }
-    .limfo{
+    .limfo {
         font-size: 3em;
     }
-    .jezik{
+    .jezik {
         font-size: 1.8em;
     }
-    .Nav-meni{
+    .Nav-meni {
         width: 40%;
     }
-    .Nav-meni li{
+    .Nav-meni li {
         display: inline-block;
         padding: 20px;
     }
-    .naslovna .glavno{
+    .naslovna .glavno {
         padding: 40px;
     }
-    .usluge ul li{
+    .usluge ul li {
         width: 30%;
     }
 }
